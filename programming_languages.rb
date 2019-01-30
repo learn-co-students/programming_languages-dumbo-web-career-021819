@@ -41,12 +41,17 @@ def reformat_languages(languages)
   languages[:oo].each do |k,v|
   newHash[k] = v
   newHash[k][:style] = []
+  #first I create a newHash then I iterate over every element in the :oo key
+  #Assign newHash the first value from languages:oo to = the value
+  #then create a :style hash to equal a blank array.
   end
     languages[:functional].each do |k,v|
       newHash[k] = v
       newHash[k][:style] = []
+      #Repeat steps above for every element in the functional key
     end
     languages.each do |k,v|
+      #Create the conditions for adding the into the style hash within newHash
       if  k == :oo
         v.each do |x,y|
           newHash[x][:style] << :oo
