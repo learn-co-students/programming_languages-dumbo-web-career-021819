@@ -1,0 +1,30 @@
+
+[1mFrom:[0m /home/Rhohoman/programming_languages-dumbo-web-career-021819/programming_languages.rb @ line 23 Object#reformat_languages:
+
+     [1;34m3[0m: [32mdef[0m [1;34mreformat_languages[0m(languages)
+     [1;34m4[0m:   [1;34m# your code here[0m
+     [1;34m5[0m:   new_hash = {}
+     [1;34m6[0m: 
+     [1;34m7[0m:   languages.each [32mdo[0m |style, language|
+     [1;34m8[0m:     language.each [32mdo[0m |type, value|
+     [1;34m9[0m:       
+    [1;34m10[0m:       
+    [1;34m11[0m:       new_hash[type] = value
+    [1;34m12[0m:       new_hash[type][[33m:style[0m] = []
+    [1;34m13[0m:       new_hash[type][[33m:style[0m] << style
+    [1;34m14[0m:       
+    [1;34m15[0m:       
+    [1;34m16[0m:       
+    [1;34m17[0m:       
+    [1;34m18[0m:       [1;34m#new_hash[type] || = value[0m
+    [1;34m19[0m:       [1;34m#new_hash[type][:style] = [][0m
+    [1;34m20[0m:       [1;34m#new_hash[type][:style] << style[0m
+    [1;34m21[0m:       
+    [1;34m22[0m:       
+ => [1;34m23[0m:       binding.pry
+    [1;34m24[0m:     [32mend[0m
+    [1;34m25[0m:   [32mend[0m
+    [1;34m26[0m:   
+    [1;34m27[0m:   new_hash
+    [1;34m28[0m: [32mend[0m
+
